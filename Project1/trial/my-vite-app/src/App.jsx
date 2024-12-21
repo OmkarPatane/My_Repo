@@ -4,6 +4,9 @@ import Chart from './components/chart';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Dashboard from './components/Dashboard';
+import DailyPlan from './components/Dailyplan';
+
+
 
 const App = () => {
     const [globalData, setGlobalData] = useState([]);
@@ -43,6 +46,7 @@ const App = () => {
                         <Route path="/login" element={<Login />} />
                         <Route path="/signup" element={<SignUp />} />
                         <Route path="/dashboard" element={<Dashboard />} />
+                        <Route path='/dailypan' element={<DailyPlan/>}/>
                         {/* Route to display the chart */}
                         <Route path="/chart" element={<Chart globalData={globalData} />} />
                     </Routes>
